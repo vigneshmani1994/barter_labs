@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-    // IMPORTANT: Uncomment and update this if your GitHub Pages URL is username.github.io/repo-name
-    // basePath: '/barter-labs',
+    // This tells Next.js to serve files from /barter_labs instead of the root /
+    basePath: '/barter_labs', 
   };
   
   export default nextConfig;
