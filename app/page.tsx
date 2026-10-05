@@ -68,7 +68,7 @@ export default function Home() {
           <div className="relative">
             <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-r from-cyan-400/20 to-blue-500/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/5 p-2 shadow-2xl shadow-cyan-950/30">
-              <img src="/barter_labs/images/project-helios.jpg" alt="Project Helios AI traffic intelligence" className="aspect-square w-full rounded-[1.5rem] object-cover" />
+              <img src="/barter_labs/images/project-helios.svg" alt="Project Helios AI traffic intelligence" className="aspect-square w-full rounded-[1.5rem] object-cover" />
               <div className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/15 bg-slate-950/80 p-4 backdrop-blur-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Featured Project</p>
                 <div className="mt-1 flex items-center justify-between gap-3">
@@ -102,7 +102,7 @@ export default function Home() {
 
         <div className="mt-14 grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035] lg:grid-cols-[1.1fr_.9fr]">
           <div className="p-3 sm:p-5">
-            <img src="/barter_labs/images/project-helios.jpg" alt="Project Helios traffic intelligence visualization" className="h-full min-h-[420px] w-full rounded-[1.5rem] object-cover" />
+            <img src="/barter_labs/images/project-helios.svg" alt="Project Helios traffic intelligence visualization" className="h-full min-h-[420px] w-full rounded-[1.5rem] object-cover" />
           </div>
           <div className="flex flex-col justify-center p-8 sm:p-12">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-300/10 text-cyan-300"><Camera className="h-6 w-6" /></div>
