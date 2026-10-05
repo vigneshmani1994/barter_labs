@@ -5,18 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Barter Labs | Modern Software Engineering Training",
-  description: "Learn by Building. Grow by Solving Real Problems.",
+  title: "Barter Labs | Building AI for the real world",
+  description: "Barter Labs builds practical AI products using artificial intelligence, computer vision and machine learning.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-background text-slate-900 antialiased`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
