@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://archerwave.in"),
   title: "Archer Wave | Software · AI · Engineering",
   description: "Archer Wave builds software, AI and engineering solutions designed to solve complex problems and turn ideas into working products.",
+  icons: {
+    icon: "./images/archerwave-symbol.png",
+    shortcut: "./images/archerwave-symbol.png",
+    apple: "./images/archerwave-symbol.png",
+  },
   openGraph: {
     title: "Archer Wave | Software · AI · Engineering",
     description: "We build technology for the real world.",
