@@ -19,7 +19,7 @@ export default function Home() {
       <header className="site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#top" className="brand-lockup" aria-label="Archer Wave home">
-            <img className="brand-logo" src="./images/archerwave-symbol.png" alt="Archer Wave" />
+            <img className="brand-logo" src="./images/archerwave-logo.png" alt="Archer Wave" />
           </a>
           <div className="nav-links">
             <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#barter-labs">Barter Labs</a><a href="#about">About</a>
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <div className="footer-top"><a href="#top" className="brand-lockup"><img className="brand-logo footer-brand-logo" src="./images/archerwave-symbol.png" alt="Archer Wave" /></a><p>SOFTWARE · AI · ENGINEERING</p><a href="#top" className="back-top">BACK TO TOP ↑</a></div>
+        <div className="footer-top"><a href="#top" className="brand-lockup"><img className="brand-logo footer-brand-logo" src="./images/archerwave-logo.png" alt="Archer Wave" /></a><p>SOFTWARE · AI · ENGINEERING</p><a href="#top" className="back-top">BACK TO TOP ↑</a></div>
         <div className="footer-bottom"><div><span className="footer-barter">BARTER LABS</span><span>A project-based learning initiative by Archer Wave.</span></div><span>© 2026 Archer Wave Limited. All rights reserved.</span></div>
       </footer>
     </main>
