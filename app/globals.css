@@ -249,3 +249,14 @@ body{background:#f7f7f3;color:#10213c}
 .core-symbol-window{position:relative!important;inset:auto!important;width:100%!important;height:100%!important;overflow:visible!important;display:flex!important;align-items:center!important;justify-content:center!important;z-index:1}
 .core-logo{position:static!important;left:auto!important;top:auto!important;width:78%!important;height:78%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important;display:block!important;image-rendering:auto}
 .core-caption{display:none!important}
+
+
+/* Header/footer use the full supplied logo lockup; keep symbol-only PNG in the hero */
+.site-nav .brand-logo{display:block;width:180px;height:48px;max-height:48px;object-fit:contain;object-position:left center;flex:0 0 auto}
+.site-footer .footer-brand-logo{display:block;width:165px;height:42px;max-height:42px;object-fit:contain;object-position:left center;flex:0 0 auto}
+.site-nav .brand-lockup{display:flex;align-items:center;min-width:180px;max-width:220px;overflow:visible}
+@media(max-width:640px){
+ .site-nav .brand-logo{width:154px;height:42px;max-height:42px}
+ .site-nav .brand-lockup{min-width:154px}
+ .site-footer .footer-brand-logo{width:148px;height:38px;max-height:38px}
+}
