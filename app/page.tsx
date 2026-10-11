@@ -104,7 +104,29 @@ export default function Home() {
       </section>
 
       <section id="contact" className="contact-section">
-        <div className="contact-inner"><p className="section-kicker">05 / CONTACT</p><h2>Have a problem<br /><em>worth solving?</em></h2><p>Tell us what you’re working on. Let’s see what we can build.</p><a href="https://archerwave.in/" className="button-primary">Start a conversation <ArrowRight size={17} /></a><span className="contact-note">Contact details can be added here before launch.</span></div>
+        <div className="contact-inner">
+          <p className="section-kicker">05 / CONTACT</p>
+          <h2>Have a problem<br /><em>worth solving?</em></h2>
+          <p>For collaborations or general queries, reach us directly or leave a message below.</p>
+          <div className="contact-form-card">
+            <p className="contact-email-line"><strong>Email:</strong> <a href="mailto:operations@archerwave.in">operations@archerwave.in</a></p>
+            <form className="contact-form" action="https://formsubmit.co/operations@archerwave.in" method="POST">
+              <input type="hidden" name="_subject" value="New enquiry from Archer Wave website" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_next" value="https://vigneshmani1994.github.io/barter_labs/?contact=sent#contact" />
+              <input type="text" name="_honey" className="contact-honeypot" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+              <label className="sr-only" htmlFor="contact-name">Your name</label>
+              <input id="contact-name" name="name" type="text" placeholder="Your name" autoComplete="name" required />
+              <label className="sr-only" htmlFor="contact-email">Your email</label>
+              <input id="contact-email" name="email" type="email" placeholder="Your email" autoComplete="email" required />
+              <label className="sr-only" htmlFor="contact-message">Your message</label>
+              <textarea id="contact-message" name="message" placeholder="Your message" rows={5} required />
+              <button className="contact-submit" type="submit">Send message <ArrowRight size={16} /></button>
+            </form>
+            <p className="contact-form-note">Your message will be sent to operations@archerwave.in.</p>
+          </div>
+        </div>
         <div className="contact-graphic" aria-hidden="true"><div className="contact-ring ring-one" /><div className="contact-ring ring-two" /><div className="contact-ring ring-three" /><img className="contact-monogram" src="./images/archerwave-symbol.png" alt="" /></div>
       </section>
 
