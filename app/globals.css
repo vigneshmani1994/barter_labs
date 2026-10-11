@@ -260,3 +260,25 @@ body{background:#f7f7f3;color:#10213c}
  .site-nav .brand-lockup{min-width:154px}
  .site-footer .footer-brand-logo{width:148px;height:38px;max-height:38px}
 }
+
+/* Minimal orbital sun: fixed ellipse tracks, moving planets, no labels or frames */
+.hero-art.orbital-sun{border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;overflow:visible!important}
+.hero-art.orbital-sun .art-label,.hero-art.orbital-sun .art-node,.hero-art.orbital-sun .art-coordinates,.hero-art.orbital-sun .core-cross,.hero-art.orbital-sun .core-caption,.hero-art.orbital-sun .core-symbol-window{display:none!important}
+.hero-art.orbital-sun .orbit{position:absolute!important;left:50%!important;top:50%!important;border:1px solid rgba(23,101,245,.20)!important;border-radius:50%!important;background:transparent!important;animation:none!important;transform-origin:center!important}
+.hero-art.orbital-sun .orbit-one{width:69%!important;height:48%!important;transform:translate(-50%,-50%) rotate(-28deg)!important}
+.hero-art.orbital-sun .orbit-two{width:91%!important;height:45%!important;border-color:rgba(23,101,245,.14)!important;transform:translate(-50%,-50%) rotate(34deg)!important}
+.hero-art.orbital-sun .orbit-three{width:45%!important;height:91%!important;border-color:rgba(16,33,60,.10)!important;transform:translate(-50%,-50%) rotate(34deg)!important}
+.hero-art.orbital-sun .art-core{position:absolute!important;left:50%!important;top:50%!important;width:31%!important;aspect-ratio:1!important;height:auto!important;transform:translate(-50%,-50%)!important;display:flex!important;align-items:center!important;justify-content:center!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important;z-index:4!important}
+.hero-art.orbital-sun .core-logo{position:static!important;left:auto!important;top:auto!important;display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important;filter:drop-shadow(0 0 12px rgba(23,101,245,.24))}
+.hero-art.orbital-sun .orbit-mover{position:absolute!important;left:50%!important;top:50%!important;border:0!important;background:transparent!important;transform-origin:center!important;pointer-events:none!important;z-index:3!important}
+.hero-art.orbital-sun .mover-one{width:69%!important;height:48%!important;transform:translate(-50%,-50%) rotate(-28deg)!important}
+.hero-art.orbital-sun .mover-two{width:91%!important;height:45%!important;transform:translate(-50%,-50%) rotate(34deg)!important}
+.hero-art.orbital-sun .mover-three{width:45%!important;height:91%!important;transform:translate(-50%,-50%) rotate(34deg)!important}
+.hero-art.orbital-sun .orbit-sphere{position:absolute!important;left:50%;top:0;width:9px!important;height:9px!important;border-radius:50%!important;transform:translate(-50%,-50%)!important;display:block!important;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#b9d8ff 16%,#1765f5 60%,#0640ad 100%)!important;box-shadow:0 0 8px rgba(23,101,245,.8),0 0 22px rgba(23,101,245,.42)!important;animation:planet-smooth-loop 18s linear infinite!important}
+.hero-art.orbital-sun .sphere-cyan{width:7px!important;height:7px!important;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#c9fbff 16%,#42c8f5 60%,#1684c9 100%)!important;box-shadow:0 0 8px rgba(66,200,245,.8),0 0 20px rgba(66,200,245,.42)!important;animation-duration:24s!important;animation-delay:-8s!important}
+.hero-art.orbital-sun .sphere-navy{width:8px!important;height:8px!important;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#b8c7ff 16%,#425bc5 60%,#172b78 100%)!important;box-shadow:0 0 8px rgba(66,91,197,.75),0 0 20px rgba(66,91,197,.36)!important;animation-duration:30s!important;animation-delay:-16s!important}
+@keyframes planet-smooth-loop{
+0%{left:50%;top:0%}6.25%{left:69.13%;top:3.81%}12.5%{left:85.36%;top:14.64%}18.75%{left:96.19%;top:30.87%}25%{left:100%;top:50%}31.25%{left:96.19%;top:69.13%}37.5%{left:85.36%;top:85.36%}43.75%{left:69.13%;top:96.19%}50%{left:50%;top:100%}56.25%{left:30.87%;top:96.19%}62.5%{left:14.64%;top:85.36%}68.75%{left:3.81%;top:69.13%}75%{left:0%;top:50%}81.25%{left:3.81%;top:30.87%}87.5%{left:14.64%;top:14.64%}93.75%{left:30.87%;top:3.81%}100%{left:50%;top:0%}
+}
+@media(max-width:640px){.hero-art.orbital-sun .art-core{width:32%!important}.hero-art.orbital-sun .orbit-sphere{width:7px!important;height:7px!important}}
+@media(prefers-reduced-motion:reduce){.hero-art.orbital-sun .orbit-sphere{animation:none!important}}
