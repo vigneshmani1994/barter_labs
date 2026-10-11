@@ -12,7 +12,7 @@ function BarterLabsLogo() {
         <path d="M7 4h13v17h9c10 0 17 6 17 15S39 48 29 48H7V4Zm13 27v7h9c3 0 5-1 5-4s-2-3-5-3h-9Z" fill="currentColor" />
         <path d="M7 4h13v17" fill="none" stroke="#1765f5" strokeWidth="3" />
       </svg>
-      <span className="barter-logo-word"><span>barter</span><span>labs</span></span>
+      <span className="barter-logo-lockup"><span className="barter-logo-word"><span>barter</span><span>labs</span></span><span className="barter-logo-tagline">PEOPLE <b>×</b> AI <b>×</b> REAL WORLD</span></span>
     </div>
   );
 }
