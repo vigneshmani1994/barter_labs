@@ -41,7 +41,10 @@ export default function Home() {
           <div className="hero-art" aria-label="Abstract technical visualization">
             <div className="art-label art-label-top"><span>ARCHER WAVE / SYSTEMS</span></div>
             <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
-            <div className="art-core"><div className="core-cross" /><img className="core-logo" src="./images/archerwave-logo.png" alt="Archer Wave monogram" /><div className="core-caption">BUILD / TEST / ITERATE</div></div>
+            <div className="orbit-mover mover-one" aria-hidden="true"><span className="orbit-sphere sphere-blue" /></div>
+            <div className="orbit-mover mover-two" aria-hidden="true"><span className="orbit-sphere sphere-cyan" /></div>
+            <div className="orbit-mover mover-three" aria-hidden="true"><span className="orbit-sphere sphere-navy" /></div>
+            <div className="art-core"><div className="core-cross" /><div className="core-symbol-window"><img className="core-logo" src="./images/archerwave-logo.png" alt="Archer Wave symbol" /></div></div>
             <div className="art-node node-one"><span className="node-dot" /> SOFTWARE</div>
             <div className="art-node node-two"><span className="node-dot" /> INTELLIGENCE</div>
             <div className="art-node node-three"><span className="node-dot" /> ENGINEERING</div>
