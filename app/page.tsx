@@ -47,6 +47,7 @@ export default function Home() {
             <div className="orbit-mover mover-three" aria-hidden="true"><span className="orbit-sphere sphere-navy" /></div>
             <div className="art-core"><img className="core-logo" src="./images/archerwave-symbol.png" alt="" /></div>
           </div>
+        </div>
         <div className="hero-bottomline"><span>BUILT AROUND REAL PROBLEMS</span><span>SCROLL TO EXPLORE ↓</span><span>ARCHER WAVE LIMITED · 2026</span></div>
       </section>
 
