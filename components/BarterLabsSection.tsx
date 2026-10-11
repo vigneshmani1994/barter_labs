@@ -7,12 +7,15 @@ const secondaryWords = ["PROJECTS", "WORKSHOPS", "INTERNSHIPS", "INDUSTRY EXPERI
 
 function BarterLabsLogo() {
   return (
-    <div className="barter-logo" role="img" aria-label="Barter Labs">
-      <svg className="barter-logo-mark" viewBox="0 0 52 52" aria-hidden="true">
-        <path d="M7 4h13v17h9c10 0 17 6 17 15S39 48 29 48H7V4Zm13 27v7h9c3 0 5-1 5-4s-2-3-5-3h-9Z" fill="currentColor" />
-        <path d="M7 4h13v17" fill="none" stroke="#1765f5" strokeWidth="3" />
+    <div className="barter-logo" role="img" aria-label="Barter Labs — People × AI × Real World">
+      <svg className="barter-logo-mark" viewBox="0 0 42 42" aria-hidden="true">
+        <path d="M3 3h11v14h8.5c9.3 0 15.5 5.1 15.5 12.5S31.8 42 22.5 42H3V3Zm11 23v7h8.5c3.3 0 5.1-1.1 5.1-3.6S25.8 26 22.5 26H14Z" fill="currentColor" />
+        <path d="M3 3h11v7H3z" fill="#1765f5" />
       </svg>
-      <span className="barter-logo-lockup"><span className="barter-logo-word"><span>barter</span><span>labs</span></span><span className="barter-logo-tagline">PEOPLE <b>×</b> AI <b>×</b> REAL WORLD</span></span>
+      <span className="barter-logo-lockup">
+        <span className="barter-logo-word"><span>barter</span><span>labs</span></span>
+        <span className="barter-logo-tagline">PEOPLE <b>×</b> AI <b>×</b> REAL WORLD</span>
+      </span>
     </div>
   );
 }
