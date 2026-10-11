@@ -194,3 +194,33 @@ body{background:#f7f7f3;color:#10213c}
  .signature-mark{width:98px}
  .contact-monogram{width:112px;max-height:58px}
 }
+
+
+/* Planetary hero: fixed orbital tracks, moving spheres, symbol-only sun */
+.orbit-one{width:69%;height:48%;transform:translate(-50%,-50%) rotate(-28deg);animation:none!important}
+.orbit-two{width:91%;height:45%;transform:translate(-50%,-50%) rotate(34deg);animation:none!important}
+.orbit-three{width:45%;height:91%;transform:translate(-50%,-50%) rotate(34deg);animation:none!important}
+.core-cross{animation:none!important;transform:rotate(45deg)}
+.art-core{isolation:isolate;border-radius:2px;box-shadow:0 0 0 1px rgba(23,101,245,.06),0 0 34px rgba(23,101,245,.10),0 0 76px rgba(23,101,245,.08)}
+.core-symbol-window{position:relative;width:90%;height:90%;overflow:hidden;display:block;z-index:1}
+.core-logo{position:absolute;left:0;top:50%;width:260%;height:auto;max-width:none;max-height:none;object-fit:contain;transform:translateY(-50%);display:block}
+.core-caption{display:none!important}
+.orbit-mover{position:absolute;left:50%;top:50%;border:0;width:69%;height:48%;transform:translate(-50%,-50%) rotate(-28deg);transform-origin:center;pointer-events:none;z-index:2;animation:planetary-orbit-one 18s linear infinite}
+.mover-two{width:91%;height:45%;transform:translate(-50%,-50%) rotate(34deg);animation-name:planetary-orbit-two;animation-duration:24s;animation-delay:-8s}
+.mover-three{width:45%;height:91%;transform:translate(-50%,-50%) rotate(34deg);animation-name:planetary-orbit-three;animation-duration:30s;animation-delay:-16s}
+.orbit-sphere{position:absolute;left:100%;top:50%;width:10px;height:10px;border-radius:50%;transform:translate(-50%,-50%);display:block;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#a9d0ff 14%,#1765f5 58%,#073ba8 100%);box-shadow:0 0 9px rgba(23,101,245,.65),0 0 22px rgba(23,101,245,.35)}
+.sphere-cyan{width:8px;height:8px;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#c8fbff 14%,#44c8f5 58%,#1879c4 100%);box-shadow:0 0 9px rgba(68,200,245,.7),0 0 22px rgba(68,200,245,.4)}
+.sphere-navy{width:9px;height:9px;background:radial-gradient(circle at 30% 25%,#fff 0 8%,#a8bfff 14%,#233d83 58%,#0b1533 100%);box-shadow:0 0 9px rgba(35,61,131,.6),0 0 20px rgba(35,61,131,.3)}
+@keyframes planetary-orbit-one{from{transform:translate(-50%,-50%) rotate(-28deg)}to{transform:translate(-50%,-50%) rotate(332deg)}}
+@keyframes planetary-orbit-two{from{transform:translate(-50%,-50%) rotate(34deg)}to{transform:translate(-50%,-50%) rotate(394deg)}}
+@keyframes planetary-orbit-three{from{transform:translate(-50%,-50%) rotate(34deg)}to{transform:translate(-50%,-50%) rotate(394deg)}}
+.node-one,.node-two,.node-three{animation:none!important}
+@media(max-width:640px){
+ .core-symbol-window{width:92%;height:92%}
+ .core-logo{width:260%}
+ .orbit-sphere{width:8px;height:8px}
+ .sphere-cyan,.sphere-navy{width:7px;height:7px}
+}
+@media(prefers-reduced-motion:reduce){
+ .orbit-mover{animation:none!important}
+}
