@@ -7,15 +7,14 @@ const secondaryWords = ["PROJECTS", "WORKSHOPS", "INTERNSHIPS", "INDUSTRY EXPERI
 
 function BarterLabsLogo() {
   return (
-    <div className="barter-logo" role="img" aria-label="Barter Labs — People × AI × Real World">
-      <svg className="barter-logo-mark" viewBox="0 0 42 42" aria-hidden="true">
-        <path d="M3 3h11v14h8.5c9.3 0 15.5 5.1 15.5 12.5S31.8 42 22.5 42H3V3Zm11 23v7h8.5c3.3 0 5.1-1.1 5.1-3.6S25.8 26 22.5 26H14Z" fill="currentColor" />
-        <path d="M3 3h11v7H3z" fill="#1765f5" />
-      </svg>
-      <span className="barter-logo-lockup">
-        <span className="barter-logo-word"><span>barter</span><span>labs</span></span>
-        <span className="barter-logo-tagline">PEOPLE <b>×</b> AI <b>×</b> REAL WORLD</span>
-      </span>
+    <div className="barter-logo">
+      <img
+        className="barter-logo-image"
+        src={`${process.env.NODE_ENV === "production" ? "/barter_labs" : ""}/images/barter-labs-logo.webp`}
+        alt="Barter Labs — People × AI × Real World Projects"
+        width={400}
+        height={136}
+      />
     </div>
   );
 }
