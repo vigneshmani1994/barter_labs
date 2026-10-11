@@ -15,7 +15,7 @@ const work = [
 
 export default function Home() {
   return (
-    <main id="top" className="min-h-screen overflow-hidden bg-[#080a0d] text-[#f3f4f2]">
+    <main id="top" className="min-h-screen overflow-hidden">
       <header className="site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#top" className="brand-lockup" aria-label="Archer Wave home">
