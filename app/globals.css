@@ -136,3 +136,46 @@ body{background:#f7f7f3;color:#10213c}
  .photo-caption span{padding:7px}
 }
 @media(max-width:420px){.nav-links{font-size:11px;letter-spacing:-.03em}.brand-name{font-size:13px}}
+
+
+/* Archer Wave identity and animated orbital hero */
+.brand-logo{display:block;width:clamp(145px,15vw,190px);height:auto;max-height:48px;object-fit:contain;object-position:left center}
+.footer-brand-logo{width:165px;max-height:42px}
+.brand-lockup{gap:0}
+.hero-art{background:radial-gradient(ellipse at center,rgba(23,101,245,.10),transparent 48%),#fff}
+.art-label-top{top:22px}
+.art-label-bottom{bottom:22px;justify-content:flex-end}
+.art-label{font-size:9px;letter-spacing:.16em}
+.orbit{will-change:transform;transform-origin:center}
+.orbit-one{width:69%;height:48%;animation:orbit-rotate-one 34s linear infinite}
+.orbit-two{width:91%;height:45%;animation:orbit-rotate-two 42s linear infinite}
+.orbit-three{width:45%;height:91%;animation:orbit-rotate-three 50s linear infinite}
+@keyframes orbit-rotate-one{from{transform:translate(-50%,-50%) rotate(-28deg)}to{transform:translate(-50%,-50%) rotate(332deg)}}
+@keyframes orbit-rotate-two{from{transform:translate(-50%,-50%) rotate(34deg)}to{transform:translate(-50%,-50%) rotate(394deg)}}
+@keyframes orbit-rotate-three{from{transform:translate(-50%,-50%) rotate(34deg)}to{transform:translate(-50%,-50%) rotate(394deg)}}
+.art-core{z-index:2}
+.core-logo{display:block;width:52%;height:52%;object-fit:contain;position:relative;z-index:1}
+.core-caption{position:relative;z-index:1;letter-spacing:.16em}
+.core-cross{animation:core-diamond-rotate 32s linear infinite}
+@keyframes core-diamond-rotate{from{transform:rotate(45deg)}to{transform:rotate(405deg)}}
+.art-node{z-index:3;box-shadow:0 7px 24px rgba(16,33,60,.055);backdrop-filter:blur(8px)}
+.node-one{animation:node-float-one 6s ease-in-out infinite}
+.node-two{animation:node-float-two 7s ease-in-out infinite}
+.node-three{animation:node-float-one 8s ease-in-out infinite reverse}
+@keyframes node-float-one{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@keyframes node-float-two{0%,100%{translate:0 0}50%{translate:0 5px}}
+.signature-mark{width:30px;height:27px;object-fit:contain;display:block}
+.contact-monogram{width:clamp(55px,7vw,90px);height:auto;position:relative;z-index:1}
+.contact-graphic{isolation:isolate}
+.contact-graphic .contact-ring{z-index:0}
+@media(max-width:640px){
+ .brand-logo{width:145px;max-height:37px}
+ .footer-brand-logo{width:155px}
+ .art-label-top{top:16px}
+ .art-label-bottom{bottom:16px}
+ .core-logo{width:50%;height:50%}
+}
+@media(prefers-reduced-motion:reduce){
+ .orbit-one,.orbit-two,.orbit-three,.core-cross,.node-one,.node-two,.node-three,.ring-two,.marquee-track{animation:none!important}
+ html{scroll-behavior:auto}
+}
