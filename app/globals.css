@@ -179,3 +179,18 @@ body{background:#f7f7f3;color:#10213c}
  .orbit-one,.orbit-two,.orbit-three,.core-cross,.node-one,.node-two,.node-three,.ring-two,.marquee-track{animation:none!important}
  html{scroll-behavior:auto}
 }
+
+
+/* Use the supplied Archer Wave PNG lockup without redrawing the logo */
+.brand-logo{width:180px;height:auto;max-height:none;object-fit:contain;object-position:left center}
+.footer-brand-logo{width:165px;height:auto;max-height:none}
+.core-logo{width:84%;height:auto;max-height:68%;object-fit:contain;display:block;position:relative;z-index:1}
+.signature-mark{width:112px;height:auto;max-height:none;object-fit:contain;display:block}
+.contact-monogram{width:clamp(110px,13vw,170px);height:auto;max-height:70px;object-fit:contain}
+@media(max-width:640px){
+ .brand-logo{width:154px;height:auto;max-height:none}
+ .footer-brand-logo{width:148px}
+ .core-logo{width:82%;max-height:62%}
+ .signature-mark{width:98px}
+ .contact-monogram{width:112px;max-height:58px}
+}
