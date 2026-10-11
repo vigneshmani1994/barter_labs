@@ -19,7 +19,7 @@ export default function Home() {
       <header className="site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#top" className="brand-lockup" aria-label="Archer Wave home">
-            <img className="brand-logo" src="./images/archerwave-logo.png" alt="Archer Wave" />
+            <img className="brand-logo" src="./images/archerwave-symbol.png" alt="Archer Wave" />
           </a>
           <div className="nav-links">
             <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#barter-labs">Barter Labs</a><a href="#about">About</a>
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="orbit-mover mover-one" aria-hidden="true"><span className="orbit-sphere sphere-blue" /></div>
             <div className="orbit-mover mover-two" aria-hidden="true"><span className="orbit-sphere sphere-cyan" /></div>
             <div className="orbit-mover mover-three" aria-hidden="true"><span className="orbit-sphere sphere-navy" /></div>
-            <div className="art-core"><div className="core-cross" /><div className="core-symbol-window"><img className="core-logo" src="./images/archerwave-logo.png" alt="Archer Wave symbol" /></div></div>
+            <div className="art-core"><div className="core-cross" /><div className="core-symbol-window"><img className="core-logo" src="./images/archerwave-symbol.png" alt="Archer Wave symbol" /></div></div>
             <div className="art-node node-one"><span className="node-dot" /> SOFTWARE</div>
             <div className="art-node node-two"><span className="node-dot" /> INTELLIGENCE</div>
             <div className="art-node node-three"><span className="node-dot" /> ENGINEERING</div>
@@ -86,18 +86,18 @@ export default function Home() {
       <section id="about" className="about-section">
         <div className="about-inner">
           <div><p className="section-kicker">04 / ABOUT ARCHER WAVE</p><h2>Engineering<br /><em>beyond the obvious.</em></h2></div>
-          <div className="about-copy"><p>Archer Wave is a technology company focused on software engineering, AI and enterprise technology.</p><p>We build practical systems around real problems — combining technical depth with rapid experimentation and product-focused thinking.</p><div className="about-signature"><img className="signature-mark" src="./images/archerwave-logo.png" alt="" /><span>SOFTWARE · AI · ENGINEERING</span></div></div>
+          <div className="about-copy"><p>Archer Wave is a technology company focused on software engineering, AI and enterprise technology.</p><p>We build practical systems around real problems — combining technical depth with rapid experimentation and product-focused thinking.</p><div className="about-signature"><img className="signature-mark" src="./images/archerwave-symbol.png" alt="" /><span>SOFTWARE · AI · ENGINEERING</span></div></div>
         </div>
         <div className="about-index" aria-hidden="true">AW / 04</div>
       </section>
 
       <section id="contact" className="contact-section">
         <div className="contact-inner"><p className="section-kicker">05 / CONTACT</p><h2>Have a problem<br /><em>worth solving?</em></h2><p>Tell us what you’re working on. Let’s see what we can build.</p><a href="https://archerwave.in/" className="button-primary">Start a conversation <ArrowRight size={17} /></a><span className="contact-note">Contact details can be added here before launch.</span></div>
-        <div className="contact-graphic" aria-hidden="true"><div className="contact-ring ring-one" /><div className="contact-ring ring-two" /><div className="contact-ring ring-three" /><img className="contact-monogram" src="./images/archerwave-logo.png" alt="" /></div>
+        <div className="contact-graphic" aria-hidden="true"><div className="contact-ring ring-one" /><div className="contact-ring ring-two" /><div className="contact-ring ring-three" /><img className="contact-monogram" src="./images/archerwave-symbol.png" alt="" /></div>
       </section>
 
       <footer className="site-footer">
-        <div className="footer-top"><a href="#top" className="brand-lockup"><img className="brand-logo footer-brand-logo" src="./images/archerwave-logo.png" alt="Archer Wave" /></a><p>SOFTWARE · AI · ENGINEERING</p><a href="#top" className="back-top">BACK TO TOP ↑</a></div>
+        <div className="footer-top"><a href="#top" className="brand-lockup"><img className="brand-logo footer-brand-logo" src="./images/archerwave-symbol.png" alt="Archer Wave" /></a><p>SOFTWARE · AI · ENGINEERING</p><a href="#top" className="back-top">BACK TO TOP ↑</a></div>
         <div className="footer-bottom"><div><span className="footer-barter">BARTER LABS</span><span>A project-based learning initiative by Archer Wave.</span></div><span>© 2026 Archer Wave Limited. All rights reserved.</span></div>
       </footer>
     </main>
