@@ -301,3 +301,11 @@ body{background:#f7f7f3;color:#10213c}
 @media(max-width:900px){.capability-item{margin:0;padding-left:18px}.capability-item:hover,.capability-item:focus-within{transform:translateY(-5px) scale(1.015);padding-left:17px}}
 @media(max-width:640px){.capability-item{padding-left:0}.capability-item:hover,.capability-item:focus-within{transform:none;padding-left:0;box-shadow:0 8px 22px rgba(16,33,60,.08)}}
 @media(prefers-reduced-motion:reduce){.capability-item,.capability-item h3,.capability-item p,.capability-item .tag-row,.capability-item .capability-top svg{transition:none}}
+
+
+/* Use the supplied Barter Labs artwork as one intact logo image */
+.barter-brand-line{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.barter-logo{display:block;flex:0 1 auto;width:clamp(260px,34vw,400px);max-width:100%;padding:0;line-height:0;transition:transform .25s ease}
+.barter-logo:hover{transform:translateY(-2px)}
+.barter-logo-image{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+@media(max-width:640px){.barter-brand-line{gap:16px}.barter-logo{width:min(100%,340px)}}
