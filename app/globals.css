@@ -53,10 +53,13 @@ button,a{-webkit-tap-highlight-color:transparent}
 .barter-section{background:#f7f7f3;color:#10213c}
 .barter-topline,.barter-footerline{border-color:rgba(16,33,60,.18)}
 .barter-brand-line{align-items:center;gap:24px;flex-wrap:wrap}
-.barter-logo{display:flex;align-items:center;gap:10px;color:#10213c}
-.barter-logo-mark{width:44px;height:44px;flex:none}
-.barter-logo-lockup{display:flex;flex-direction:column;gap:5px}.barter-logo-word{display:flex;align-items:baseline;font-family:var(--sans);font-size:clamp(25px,3vw,38px);font-weight:800;letter-spacing:-.075em;line-height:1}.barter-logo-tagline{font:8px var(--mono);letter-spacing:.12em;color:#42536c}.barter-logo-tagline b{color:#1765f5;font-weight:500}
+.barter-logo{display:inline-flex;align-items:center;gap:13px;color:#17243d;padding:10px 0;max-width:100%}
+.barter-logo-mark{width:42px;height:42px;flex:none;filter:drop-shadow(0 2px 2px rgba(16,33,60,.06))}
+.barter-logo-lockup{display:flex;flex-direction:column;gap:7px}.barter-logo-word{display:flex;align-items:baseline;font-family:var(--sans);font-size:clamp(28px,3.2vw,42px);font-weight:800;letter-spacing:-.078em;line-height:.95;white-space:nowrap}.barter-logo-tagline{font:8px var(--mono);letter-spacing:.18em;color:#526079;white-space:nowrap}.barter-logo-tagline b{color:#1765f5;font-weight:600;padding:0 2px}
 .barter-logo-word span:last-child{color:#1765f5}
+.barter-brand-line{align-items:center;gap:28px;flex-wrap:wrap}
+.barter-logo{transition:transform .25s ease}.barter-logo:hover{transform:translateY(-2px)}
+.barter-logo-mark{overflow:visible}
 .barter-label{color:#5d6878}
 .barter-content h2{font-size:clamp(68px,12vw,160px);line-height:.88;letter-spacing:-.085em;margin:52px 0 58px;color:#10213c}
 .barter-content h2 em{-webkit-text-stroke:1.5px #1765f5;color:transparent}
@@ -66,7 +69,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .marquee-shell{border-color:rgba(16,33,60,.18)}
 .marquee-word{color:#10213c}
 .marquee-word b{color:#1765f5}
-@media(max-width:640px){.barter-content h2{font-size:clamp(66px,18vw,112px);margin:40px 0}.barter-logo-mark{width:35px;height:35px}.barter-logo-word{font-size:29px}.barter-logo-tagline{font-size:7px}}
+@media(max-width:640px){.barter-content h2{font-size:clamp(66px,18vw,112px);margin:40px 0}.barter-brand-line{gap:14px}.barter-logo{gap:9px}.barter-logo-mark{width:34px;height:34px}.barter-logo-word{font-size:clamp(25px,7vw,31px)}.barter-logo-tagline{font-size:6px;letter-spacing:.12em}}
 
 /* Final contrast and polish pass */
 body{background:#f7f7f3;color:#10213c}
