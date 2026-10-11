@@ -243,3 +243,9 @@ body{background:#f7f7f3;color:#10213c}
 @media(max-width:640px){
  .core-logo{left:-60%!important;width:400%!important;height:400%!important}
 }
+
+
+/* Render uploaded symbol-only PNG directly, without cropping */
+.core-symbol-window{position:relative!important;inset:auto!important;width:100%!important;height:100%!important;overflow:visible!important;display:flex!important;align-items:center!important;justify-content:center!important;z-index:1}
+.core-logo{position:static!important;left:auto!important;top:auto!important;width:78%!important;height:78%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important;display:block!important;image-rendering:auto}
+.core-caption{display:none!important}
