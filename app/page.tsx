@@ -70,7 +70,23 @@ export default function Home() {
         <div className="work-list">
           {work.map(item => <article className="work-card" key={item.id}>
             <div className={`work-visual ${item.visual}`}>
-              {item.visual === "helios" ? <><img className="work-photo" src="./images/project-helios.svg" alt="Illustration of Indian city traffic with computer-vision vehicle detection and lane tracking" /><div className="photo-caption"><span>PROJECT HELIOS</span><span>COMPUTER VISION / 01</span></div></> : <><div className="system-lines" /><div className="system-block block-a">INPUT</div><div className="system-block block-b">PROCESS</div><div className="system-block block-c">OUTPUT</div><div className="system-connector" /><div className="vision-hud"><span>AW / LAB</span><span>EXPERIMENT 02</span></div></>}
+              {item.visual === "helios" ? <><img className="work-photo" src="./images/project-helios.svg" alt="Illustration of Indian city traffic with computer-vision vehicle detection and lane tracking" /><div className="photo-caption"><span>PROJECT HELIOS</span><span>COMPUTER VISION / 01</span></div></> : <div className="experiment-graphic" aria-label="Input flows into a process hub with CRM management, CRM software and quick commerce experiments, then produces an output">
+                <div className="system-lines" aria-hidden="true" />
+                <div className="vision-hud"><span>AW / LAB</span><span>EXPERIMENT 02</span></div>
+                <div className="experiment-flow">
+                  <div className="experiment-node input-node"><span className="node-symbol">↳</span><span>INPUT</span><small>Signals &amp; ideas</small></div>
+                  <div className="flow-link input-link" aria-hidden="true" />
+                  <div className="process-hub"><span className="hub-orbit" aria-hidden="true" /><span className="hub-icon"><Workflow size={23} strokeWidth={1.5} /></span><strong>PROCESS</strong><small>Build · Test · Learn</small></div>
+                  <div className="experiment-branches">
+                    <div className="experiment-branch"><span className="branch-icon"><Network size={17} strokeWidth={1.6} /></span><span><strong>CRM Management</strong><small>People &amp; workflows</small></span></div>
+                    <div className="experiment-branch"><span className="branch-icon"><Layers3 size={17} strokeWidth={1.6} /></span><span><strong>CRM Software</strong><small>Tools &amp; dashboards</small></span></div>
+                    <div className="experiment-branch"><span className="branch-icon"><ArrowRight size={17} strokeWidth={1.6} /></span><span><strong>Quick Commerce</strong><small>Fast-moving systems</small></span></div>
+                  </div>
+                  <div className="flow-link output-link" aria-hidden="true" />
+                  <div className="experiment-node output-node"><span className="node-symbol">↗</span><span>OUTPUT</span><small>Useful outcomes</small></div>
+                </div>
+                <div className="experiment-caption"><span>CONNECTED EXPERIMENTS</span><span>IDEA → SYSTEM → IMPACT</span></div>
+              </div>}
             </div>
             <div className="work-copy"><div className="work-meta"><span>{item.id} / {item.label}</span><span className="status-dot">{item.status}</span></div><h3>{item.title}</h3><p>{item.description}</p><a href="#contact" className="inline-link">Discuss a project <ArrowRight size={16} /></a></div>
           </article>)}
