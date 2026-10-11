@@ -1,28 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Project Helios traffic intelligence</title><desc id="desc">Illustrated Indian city road with computer vision vehicle detection and lane tracking.</desc>
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#111a3a"/></linearGradient>
-<linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#27344b"/><stop offset="1" stop-color="#101827"/></linearGradient>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d8ecff"/><stop offset="1" stop-color="#f9fbff"/></linearGradient>
+ <linearGradient id="road" x2="0" y2="1"><stop stop-color="#596a7d"/><stop offset="1" stop-color="#182b43"/></linearGradient>
+ <linearGradient id="blue" x2="1" y2="1"><stop stop-color="#2d83ff"/><stop offset="1" stop-color="#0750d7"/></linearGradient>
+ <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#eaf2fc" stop-opacity=".86"/></linearGradient>
+ <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#3d83e7" stroke-opacity=".12"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17365d" flood-opacity=".18"/></filter>
 </defs>
-<rect width="1200" height="900" rx="48" fill="url(#bg)"/>
-<text x="70" y="82" fill="#67e8f9" font-family="Arial" font-size="22" font-weight="700" letter-spacing="5">BARTER LABS</text>
-<text x="70" y="132" fill="white" font-family="Arial" font-size="48" font-weight="800">PROJECT HELIOS</text>
-<text x="70" y="170" fill="#94a3b8" font-family="Arial" font-size="22">AI traffic intelligence for Indian roads</text>
-<rect x="70" y="215" width="1060" height="480" rx="30" fill="#08101d" stroke="#24334b"/>
-<path d="M300 695 L455 215 H745 L900 695 Z" fill="url(#road)"/>
-<path d="M600 215 V695" stroke="#f8fafc" stroke-width="6" stroke-dasharray="28 22" opacity=".55"/>
-<path d="M455 215 L300 695 M745 215 L900 695" stroke="#475569" stroke-width="4"/>
-<g fill="#38bdf8" stroke="#e0f2fe" stroke-width="3">
-<rect x="495" y="500" width="55" height="92" rx="12"/><rect x="650" y="420" width="55" height="92" rx="12"/>
-<rect x="560" y="315" width="45" height="75" rx="10"/>
+<rect width="1200" height="720" fill="url(#sky)"/>
+<circle cx="155" cy="95" r="95" fill="#fff" opacity=".5"/>
+<g fill="#fff" opacity=".72"><ellipse cx="380" cy="108" rx="90" ry="22"/><ellipse cx="430" cy="97" rx="58" ry="31"/><ellipse cx="470" cy="112" rx="75" ry="20"/></g>
+<g fill="#c3d5e9"><path d="M0 390V270h64v120M70 390V230h90v160M170 390V288h55v102M240 390V205h82v185M330 390V250h60v140M405 390V300h72v90M500 390V235h72v155M590 390V285h48v105M650 390V205h84v185M750 390V270h55v120M820 390V175h95v215M925 390V245h60v145M1000 390V285h75v105M1090 390V225h110v165"/></g>
+<g fill="#eff6ff" opacity=".9"><path d="M80 250h9v18h-9zm20 0h9v18h-9zm20 0h9v18h-9zM260 225h11v18h-11zm22 0h11v18h-11zm-22 30h11v18h-11zm22 0h11v18h-11zM840 200h12v18h-12zm23 0h12v18h-12zm-23 30h12v18h-12zm23 0h12v18h-12z"/></g>
+<g fill="#2b5a47"><circle cx="25" cy="370" r="90"/><circle cx="100" cy="380" r="65"/><circle cx="1100" cy="370" r="90"/><circle cx="1170" cy="390" r="65"/></g>
+<g fill="#397858"><circle cx="25" cy="350" r="62"/><circle cx="93" cy="366" r="44"/><circle cx="1092" cy="350" r="65"/><circle cx="1170" cy="364" r="49"/></g>
+<path d="M0 720 260 365H940L1200 720Z" fill="url(#road)"/>
+<path d="M0 720 260 365H285L70 720Z" fill="#8da0b2" opacity=".55"/><path d="M1200 720 940 365h-23l210 355Z" fill="#8da0b2" opacity=".45"/>
+<path d="M390 720 510 365h10L465 720M735 720 670 365h10L810 720" stroke="#fff" stroke-width="8" stroke-dasharray="30 26" opacity=".9"/>
+<path d="M560 720 590 365h7L590 720" stroke="#35e7bd" stroke-width="4" stroke-dasharray="12 13" opacity=".95"/>
+<path d="M245 720 360 365" stroke="#ff9b42" stroke-width="4" stroke-dasharray="13 13" opacity=".85"/><path d="M945 720 835 365" stroke="#ff9b42" stroke-width="4" stroke-dasharray="13 13" opacity=".85"/>
+<!-- elevated metro / flyover -->
+<path d="M745 220 1200 105V170L760 278Z" fill="#c4d0dd"/><path d="M760 278 1200 170v17L767 298Z" fill="#718398"/><path d="M745 220 1200 105" stroke="#f9fbff" stroke-width="8"/><path d="M780 210 1200 108" stroke="#45637f" stroke-width="3"/>
+<g stroke="#405a75" stroke-width="4"><path d="M810 201v30M870 185v30M930 169v30M990 154v30M1050 138v30M1110 123v30M1170 113v30"/></g>
+<path d="M835 278v168h32V270M1050 230v216h32V222" fill="#b3c0ce"/><path d="M835 278h32M1050 230h32" stroke="#74889d" stroke-width="8"/>
+<!-- cars -->
+<g filter="url(#shadow)">
+ <g transform="translate(115 492)"><path d="M0 62 15 28Q24 8 53 8h64q24 0 36 22l17 32 5 48H-4Z" fill="#1e4e82"/><path d="M31 30q8-14 25-14h53q14 0 22 14l8 22H20Z" fill="#a8d8f4"/><rect x="4" y="67" width="166" height="29" rx="8" fill="#173753"/><rect x="6" y="77" width="14" height="10" rx="3" fill="#ff655c"/><rect x="151" y="77" width="14" height="10" rx="3" fill="#ff655c"/><circle cx="28" cy="109" r="16" fill="#111c2b"/><circle cx="140" cy="109" r="16" fill="#111c2b"/><circle cx="28" cy="109" r="7" fill="#9cabb9"/><circle cx="140" cy="109" r="7" fill="#9cabb9"/></g>
+ <g transform="translate(430 450) scale(.82)"><path d="M0 62 15 28Q24 8 53 8h64q24 0 36 22l17 32 5 48H-4Z" fill="#f7f9fc"/><path d="M31 30q8-14 25-14h53q14 0 22 14l8 22H20Z" fill="#a6c9e7"/><rect x="4" y="67" width="166" height="29" rx="8" fill="#e0e8f1"/><rect x="6" y="77" width="14" height="10" rx="3" fill="#ff655c"/><rect x="151" y="77" width="14" height="10" rx="3" fill="#ff655c"/><circle cx="28" cy="109" r="16" fill="#111c2b"/><circle cx="140" cy="109" r="16" fill="#111c2b"/><circle cx="28" cy="109" r="7" fill="#9cabb9"/><circle cx="140" cy="109" r="7" fill="#9cabb9"/></g>
+ <g transform="translate(770 475) scale(.72)"><path d="M0 62 15 28Q24 8 53 8h64q24 0 36 22l17 32 5 48H-4Z" fill="#4c6178"/><path d="M31 30q8-14 25-14h53q14 0 22 14l8 22H20Z" fill="#a8d8f4"/><rect x="4" y="67" width="166" height="29" rx="8" fill="#2b3d50"/><rect x="6" y="77" width="14" height="10" rx="3" fill="#ff655c"/><rect x="151" y="77" width="14" height="10" rx="3" fill="#ff655c"/><circle cx="28" cy="109" r="16" fill="#111c2b"/><circle cx="140" cy="109" r="16" fill="#111c2b"/></g>
 </g>
-<g font-family="Arial" font-size="18" font-weight="700">
-<rect x="105" y="255" width="220" height="72" rx="18" fill="#0f1d2e" stroke="#164e63"/><text x="130" y="284" fill="#67e8f9">LEFT LANE</text><text x="130" y="312" fill="white">12 min</text>
-<rect x="855" y="255" width="220" height="72" rx="18" fill="#0f1d2e" stroke="#164e63"/><text x="880" y="284" fill="#67e8f9">RIGHT LANE</text><text x="880" y="312" fill="white">18 min</text>
-<rect x="105" y="590" width="240" height="72" rx="18" fill="#0f1d2e" stroke="#164e63"/><text x="130" y="619" fill="#67e8f9">LANE DEVIATION</text><text x="130" y="647" fill="white">Detected</text>
-<rect x="855" y="590" width="220" height="72" rx="18" fill="#0f1d2e" stroke="#164e63"/><text x="880" y="619" fill="#67e8f9">ROAD ANOMALY</text><text x="880" y="647" fill="white">Scanning</text>
+<!-- detection overlays -->
+<g fill="none" stroke="#1d7dff" stroke-width="3"><rect x="103" y="480" width="184" height="140" rx="4"/><path d="M103 503v-23h23M264 480h23v23M103 597v23h23M264 620h23v-23"/><rect x="425" y="440" width="150" height="120" rx="4"/></g>
+<g fill="none" stroke="#ffb43b" stroke-width="3"><rect x="760" y="467" width="142" height="117" rx="4"/><path d="M760 490v-23h23M879 467h23v23M760 561v23h23M879 584h23v-23"/></g>
+<path d="M290 580Q480 640 690 590T930 600" stroke="#36e6bd" stroke-width="4" stroke-dasharray="10 11" fill="none" opacity=".9"/>
+<g filter="url(#shadow)">
+ <g transform="translate(45 42)"><rect width="285" height="54" rx="10" fill="url(#glass)" stroke="#fff"/><circle cx="25" cy="27" r="6" fill="#1765f5"/><text x="43" y="23" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#61738a">PROJECT HELIOS</text><text x="43" y="40" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#10213c">LIVE TRAFFIC INTELLIGENCE</text></g>
+ <g transform="translate(820 48)"><rect width="310" height="70" rx="10" fill="url(#glass)" stroke="#fff"/><text x="18" y="25" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#61738a">VISION PIPELINE</text><text x="18" y="49" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#10213c">DETECT / TRACK / ANALYSE</text><circle cx="282" cy="22" r="5" fill="#27c99a"/></g>
+ <g transform="translate(840 610)"><rect width="265" height="65" rx="9" fill="#10213c" fill-opacity=".9" stroke="#6ca8ff" stroke-opacity=".8"/><circle cx="23" cy="32" r="6" fill="#ffb43b"/><text x="42" y="27" font-family="Arial,sans-serif" font-size="11" fill="#c5d7ef">ROAD EVENT DETECTED</text><text x="42" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#fff">Lane &amp; vehicle analytics</text></g>
 </g>
-<g fill="none" stroke="#22d3ee" stroke-width="3" opacity=".8"><circle cx="600" cy="455" r="120"/><circle cx="600" cy="455" r="170"/></g>
-<text x="600" y="458" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="800">LIVE AI VISION</text>
-<rect x="70" y="735" width="1060" height="95" rx="24" fill="#0b1525" stroke="#1e3a5f"/>
-<text x="105" y="777" fill="#94a3b8" font-family="Arial" font-size="17">VISION ENGINE</text><text x="105" y="807" fill="white" font-family="Arial" font-size="23" font-weight="700">Vehicle detection • Lane analysis • Traffic flow • Road anomaly detection</text>
+<rect width="1200" height="720" fill="url(#grid)" opacity=".3"/>
+<path d="M0 0h1200v720H0z" fill="none" stroke="#fff" stroke-width="2"/>
 </svg>
