@@ -38,20 +38,15 @@ export default function Home() {
             <div className="hero-actions"><a href="#work" className="button-primary">Explore our work <ArrowRight size={17} /></a><a href="#contact" className="button-text">Talk to us <ArrowDownRight size={17} /></a></div>
             <div className="hero-footnote"><span className="footnote-line" /> Independent thinking. Engineering-led execution.</div>
           </div>
-          <div className="hero-art" aria-label="Abstract technical visualization">
-            <div className="art-label art-label-top"><span>ARCHER WAVE / SYSTEMS</span></div>
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
+          <div className="hero-art orbital-sun" aria-label="Archer Wave symbol with planets orbiting on fixed elliptical tracks">
+            <div className="orbit orbit-one" aria-hidden="true" />
+            <div className="orbit orbit-two" aria-hidden="true" />
+            <div className="orbit orbit-three" aria-hidden="true" />
             <div className="orbit-mover mover-one" aria-hidden="true"><span className="orbit-sphere sphere-blue" /></div>
             <div className="orbit-mover mover-two" aria-hidden="true"><span className="orbit-sphere sphere-cyan" /></div>
             <div className="orbit-mover mover-three" aria-hidden="true"><span className="orbit-sphere sphere-navy" /></div>
-            <div className="art-core"><div className="core-cross" /><div className="core-symbol-window"><img className="core-logo" src="./images/archerwave-symbol.png" alt="Archer Wave symbol" /></div></div>
-            <div className="art-node node-one"><span className="node-dot" /> SOFTWARE</div>
-            <div className="art-node node-two"><span className="node-dot" /> INTELLIGENCE</div>
-            <div className="art-node node-three"><span className="node-dot" /> ENGINEERING</div>
-            <div className="art-coordinates">13°04' N<br />80°16' E</div>
-            <div className="art-label art-label-bottom"><span>IDEAS INTO SYSTEMS</span></div>
+            <div className="art-core"><img className="core-logo" src="./images/archerwave-symbol.png" alt="" /></div>
           </div>
-        </div>
         <div className="hero-bottomline"><span>BUILT AROUND REAL PROBLEMS</span><span>SCROLL TO EXPLORE ↓</span><span>ARCHER WAVE LIMITED · 2026</span></div>
       </section>
 
