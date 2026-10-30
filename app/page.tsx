@@ -45,7 +45,7 @@ export default function Home() {
             <div className="orbit-mover mover-one" aria-hidden="true"><span className="orbit-sphere sphere-blue" /></div>
             <div className="orbit-mover mover-two" aria-hidden="true"><span className="orbit-sphere sphere-cyan" /></div>
             <div className="orbit-mover mover-three" aria-hidden="true"><span className="orbit-sphere sphere-navy" /></div>
-            <div className="art-core"><img className="core-logo" src="./images/archerwave-symbol.png" alt="" /></div>
+            <div className="art-core"><span className="aw-monogram-text" aria-label="AW">AW</span></div>
           </div>
         </div>
         <div className="hero-bottomline"><span>BUILT AROUND REAL PROBLEMS</span><span>SCROLL TO EXPLORE ↓</span><span>ARCHER WAVE LIMITED · 2026</span></div>
@@ -98,7 +98,7 @@ export default function Home() {
       <section id="about" className="about-section">
         <div className="about-inner">
           <div><p className="section-kicker">04 / ABOUT ARCHER WAVE</p><h2>Engineering<br /><em>beyond the obvious.</em></h2></div>
-          <div className="about-copy"><p>Archer Wave is a technology company focused on software engineering, AI and enterprise technology.</p><p>We build practical systems around real problems — combining technical depth with rapid experimentation and product-focused thinking.</p><div className="about-signature"><img className="signature-mark" src="./images/archerwave-symbol.png" alt="" /><span>SOFTWARE · AI · ENGINEERING</span></div></div>
+          <div className="about-copy"><p>Archer Wave is a technology company focused on software engineering, AI and enterprise technology.</p><p>We build practical systems around real problems — combining technical depth with rapid experimentation and product-focused thinking.</p><div className="about-signature"><span className="aw-signature-text" aria-label="AW">AW</span><span>SOFTWARE · AI · ENGINEERING</span></div></div>
         </div>
         <div className="about-index" aria-hidden="true">AW / 04</div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
             <p className="contact-form-note">Your message will be sent to operations@archerwave.in.</p>
           </div>
         </div>
-        <div className="contact-graphic" aria-hidden="true"><div className="contact-ring ring-one" /><div className="contact-ring ring-two" /><div className="contact-ring ring-three" /><img className="contact-monogram" src="./images/archerwave-symbol.png" alt="" /></div>
+        <div className="contact-graphic" aria-hidden="true"><div className="contact-ring ring-one" /><div className="contact-ring ring-two" /><div className="contact-ring ring-three" /><span className="aw-contact-text">AW</span></div>
       </section>
 
       <footer className="site-footer">
