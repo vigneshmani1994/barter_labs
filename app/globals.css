@@ -361,6 +361,6 @@ body{background:#f7f7f3;color:#10213c}
 
 /* AW typographic monograms replace the symbol artwork in decorative illustrations */
 .aw-monogram-text{display:block;font-family:var(--sans);font-size:clamp(54px,7vw,94px);font-weight:800;line-height:1;letter-spacing:-.105em;color:#10213c;text-align:center;user-select:none}
-.aw-monogram-text::first-letter{color:#10213c}
+.aw-monogram-text::first-letter{color:#1765f5}.aw-monogram-text{color:#1765f5!important}
 .aw-signature-text{display:inline-block;font-family:var(--sans);font-size:27px;font-weight:800;line-height:1;letter-spacing:-.11em;color:#1765f5}
 .aw-contact-text{position:relative;z-index:1;display:block;font-family:var(--sans);font-size:clamp(48px,7vw,90px);font-weight:800;line-height:1;letter-spacing:-.12em;color:#1765f5;user-select:none}
