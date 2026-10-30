@@ -357,3 +357,10 @@ body{background:#f7f7f3;color:#10213c}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:900px){.contact-section{grid-template-columns:1fr .28fr}.contact-graphic{max-width:260px}.contact-form-card{padding:24px}}
 @media(max-width:640px){.contact-section{grid-template-columns:1fr}.contact-graphic{display:none}.contact-form-card{padding:22px 18px;margin-top:22px;border-radius:16px}.contact-form input:not([type=hidden]),.contact-form textarea{font-size:16px}}
+
+
+/* AW typographic monograms replace the symbol artwork in decorative illustrations */
+.aw-monogram-text{display:block;font-family:var(--sans);font-size:clamp(54px,7vw,94px);font-weight:800;line-height:1;letter-spacing:-.105em;color:#10213c;text-align:center;user-select:none}
+.aw-monogram-text::first-letter{color:#10213c}
+.aw-signature-text{display:inline-block;font-family:var(--sans);font-size:27px;font-weight:800;line-height:1;letter-spacing:-.11em;color:#1765f5}
+.aw-contact-text{position:relative;z-index:1;display:block;font-family:var(--sans);font-size:clamp(48px,7vw,90px);font-weight:800;line-height:1;letter-spacing:-.12em;color:#1765f5;user-select:none}
